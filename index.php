@@ -4,8 +4,9 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Camere Web - Maramureș</title>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+<body onload="start();">
 <?php include_once("ga.php") ?>
 
 <img src="webcam.php?id=0" width="700" height="525"/>
