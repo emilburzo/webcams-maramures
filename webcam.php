@@ -19,28 +19,43 @@ if (!array_key_exists($id, $array)) {
 
 $url = $array[$id];
 
-// fetch webcam URL content and save cookies file (webcam URL is tied to the session)
-$ch = curl_init($url);
+$cookie_file = "/tmp/webcam_cookies_" . $id;
+$content_file = "/tmp/webcam_content_" . $id;
 
-$cookie_file = "/tmp/cookies-" . rand();
+// purge cache file if older than 10 minutes
+if (file_exists($cookie_file) && (filemtime($cookie_file) > (time() - 60 * 10))) {
+    unlink($cookie_file);
+    unlink($content_file);
+}
 
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_HEADER, 0);
-curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie_file);
-curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie_file);
+if (file_exists($cookie_file)) {
+    // cache file exists, serve contents
+    $relative_url = file_get_contents($content_file);
+} else {
+    // no cache file, get copy from live
+    $ch = curl_init($url);
 
-$content = curl_exec($ch);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie_file);
+    curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie_file);
 
-curl_close($ch);
+    $content = curl_exec($ch);
 
-// parse webcam URL
-$findme = "hide_cam_url.php";
-$pos1 = strpos($content, $findme);
+    curl_close($ch);
 
-$findme = "webcam_img";
-$pos2 = strpos($content, $findme);
+    // parse webcam URL
+    $findme = "hide_cam_url.php";
+    $pos1 = strpos($content, $findme);
 
-$relative_url = substr($content, $pos1, ($pos2 - $pos1 - 6));
+    $findme = "webcam_img";
+    $pos2 = strpos($content, $findme);
+
+    $relative_url = substr($content, $pos1, ($pos2 - $pos1 - 6));
+
+    // save to cache file
+    file_put_contents($content_file, $relative_url);
+}
 
 //echo $relative_url;
 
@@ -58,7 +73,5 @@ curl_close($ch);
 
 header("Content-Type: image/jpeg");
 echo $image;
-
-unlink($cookie_file);
 
 ?>
