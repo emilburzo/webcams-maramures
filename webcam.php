@@ -4,8 +4,9 @@
 $array = [
     "0" => "http://jurnalul.ro/webcam/suior-1-427.html",
     "1" => "http://jurnalul.ro/webcam/suior-2-428.html",
-    "2" => "http://jurnalul.ro/webcam/cavnic-roata-1-288.html",
-    "3" => "http://jurnalul.ro/webcam/cavnic-roata-3-303.html",
+    "2" => "http://jurnalul.ro/webcam/suior-cota-1000-244.html",
+    "3" => "http://jurnalul.ro/webcam/cavnic-roata-1-288.html",
+    "4" => "http://jurnalul.ro/webcam/cavnic-roata-3-303.html",
 ];
 
 // webcam id parameter
