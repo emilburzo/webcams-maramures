@@ -14,6 +14,6 @@
 <img src="webcam.php?id=2" width="700" height="525"/>
 <img src="webcam.php?id=3" width="700" height="525"/>
 <img src="webcam.php?id=4" width="700" height="525"/>
-<iframe src="http://www.rcs-rds.ro/cams_utilities/jwplayer/player-licensed53.swf?streamer=rtmpe://82.76.249.73/digilivedge&file=baia_mare_desktop" width="700" height="525">
+<iframe src="http://www.rcs-rds.ro/cams_utilities/jwplayer/player-licensed53.swf?streamer=rtmp://82.76.249.73/digilivedge&file=baia_mare_desktop&bufferlength=1" width="700" height="525">
 </body>
 </html>
