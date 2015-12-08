@@ -7,6 +7,9 @@
 
     <title>Camere Web - Maramureș</title>
 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <script type="text/javascript" src="js/script.js"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
