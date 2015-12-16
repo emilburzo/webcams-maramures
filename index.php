@@ -16,23 +16,27 @@
 <body onload="start();">
 
 <div class="cam">
-    <img src="webcam.php?id=0" width="504" height="376"/>
+    <img title="Suior" src="webcam.php?id=0" width="504" height="376"/>
 </div>
 
 <div class="cam">
-    <img src="webcam.php?id=1" width="504" height="376"/>
+    <img title="Suior" src="webcam.php?id=1" width="504" height="376"/>
 </div>
 
 <div class="cam">
-    <img src="webcam.php?id=2" width="504" height="376"/>
+    <img title="Suior" src="webcam.php?id=2" width="504" height="376"/>
 </div>
 
 <div class="cam">
-    <img src="webcam.php?id=3" width="504" height="376"/>
+    <img title="Cavnic" src="webcam.php?id=3" width="504" height="376"/>
 </div>
 
 <div class="cam">
-    <img src="webcam.php?id=4" width="504" height="376"/>
+    <img title="Cavnic" src="webcam.php?id=4" width="504" height="376"/>
+</div>
+
+<div class="cam">
+    <img title="Cavnic" id="cavnic" width="504" height="376"/>
 </div>
 
 <div class="cam">
