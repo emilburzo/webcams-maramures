@@ -15,6 +15,10 @@ function start() {
     var images = document.getElementsByTagName('img');
 
     for (var i = 0; i < images.length; i++) {
+        if (images[i].id == "cavnic") {
+            continue;
+        }
+
         srcList[i] = images[i].src;
     }
 
@@ -27,6 +31,10 @@ function timer() {
 
     for (var i = 0; i < images.length; i++) {
         var image = images[i];
+
+        if (image.id == "cavnic") {
+            continue;
+        }
 
         if (image.complete) {
             image.src = srcList[i] + "&time=" + time;
