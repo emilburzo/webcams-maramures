@@ -1,10 +1,12 @@
 // cavnic websocket livestream
-var ws = new WebSocket("ws://81.30.148.60:9799");
+if (window.WebSocket) {
+    var ws = new WebSocket("ws://81.30.148.60:9799");
 
-ws.onmessage = function (event) {
-    var msg = JSON.parse(event.data);
-    document.getElementById('cavnic').setAttribute('src', 'data:image/png;base64,' + msg.image);
-};
+    ws.onmessage = function (event) {
+        var msg = JSON.parse(event.data);
+        document.getElementById('cavnic').setAttribute('src', 'data:image/png;base64,' + msg.image);
+    };
+}
 
 // the rest
 srcList = [];
