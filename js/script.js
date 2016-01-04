@@ -32,7 +32,7 @@ function timer() {
     for (var i = 0; i < images.length; i++) {
         var image = images[i];
 
-        if (image.id == "cavnic") {
+        if (images[i].classList.contains("skip")) {
             continue;
         }
 
