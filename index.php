@@ -16,15 +16,15 @@
 <body onload="start();">
 
 <div class="cam">
-    <img title="Suior" src="http://suior.dyndns.org:3334/cgi-bin/faststream.jpg?stream=full&fps=5&rand=<?php echo time(); ?>" width="504" height="376"/>
+    <img class="skip" title="Suior" src="http://suior.dyndns.org:3334/cgi-bin/faststream.jpg?stream=full&fps=5&rand=<?php echo time(); ?>" width="504" height="376"/>
 </div>
 
 <div class="cam">
-    <img title="Suior" src="http://suior.dyndns.org:3335/control/faststream.jpg?stream=full&fps=5&rand=<?php echo time(); ?>" width="504" height="376"/>
+    <img class="skip" title="Suior" src="http://suior.dyndns.org:3335/control/faststream.jpg?stream=full&fps=5&rand=<?php echo time(); ?>" width="504" height="376"/>
 </div>
 
 <div class="cam">
-    <img title="Suior" src="http://suior.dyndns.org:3333/cgi-bin/faststream.jpg?stream=full&fps=5&rand=<?php echo time(); ?>" width="504" height="376"/>
+    <img class="skip" title="Suior" src="http://suior.dyndns.org:3333/cgi-bin/faststream.jpg?stream=full&fps=5&rand=<?php echo time(); ?>" width="504" height="376"/>
 </div>
 
 <div class="cam">
@@ -36,7 +36,7 @@
 </div>
 
 <div class="cam">
-    <img title="Cavnic" id="cavnic" width="504" height="376"/>
+    <img class="skip" title="Cavnic" width="504" height="376"/>
 </div>
 
 <div class="cam">
