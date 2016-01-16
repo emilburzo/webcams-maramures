@@ -36,7 +36,7 @@
 </div>
 
 <div class="cam">
-    <img class="skip" title="Cavnic" width="504" height="376"/>
+    <img id="cavnic" class="skip" title="Cavnic" width="504" height="376"/>
 </div>
 
 <div class="cam">
