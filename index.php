@@ -39,12 +39,6 @@
     <img id="cavnic" class="skip" title="Cavnic" width="504" height="376"/>
 </div>
 
-<div class="cam">
-    <iframe
-        src="http://www.rcs-rds.ro/cams_utilities/jwplayer/player-licensed53.swf?streamer=rtmp://82.76.249.73/digilivedge&file=baia_mare_desktop&bufferlength=1"
-        width="504" height="376"></iframe>
-</div>
-
 <?php include_once("ga.php") ?>
 </body>
 </html>
