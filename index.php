@@ -16,6 +16,10 @@
 <body onload="start();">
 
 <div class="cam">
+    <iframe width="504" height="376" src="https://www.youtube.com/embed/XaGHnEp5-M8?autoplay=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="cam">
     <img class="skip" title="Suior" src="http://suior.dyndns.org:3334/cgi-bin/faststream.jpg?stream=full&fps=5&rand=<?php echo time(); ?>" width="504" height="376"/>
 </div>
 
