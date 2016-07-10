@@ -16,7 +16,7 @@
 <body onload="start();">
 
 <div class="cam">
-    <iframe width="504" height="376" src="https://www.youtube.com/embed/XaGHnEp5-M8?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="504" height="376" src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/c/EmilBurzo/live | grep videoId | cut -d '\"' -f 4")?>?autoplay=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="cam">
