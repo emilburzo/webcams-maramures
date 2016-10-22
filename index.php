@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Camere Web - Maramureș</title>
+    <title>Camere Web din Maramureș</title>
+    <meta name=”description” content='Webcam-uri în direct din zona Maramureș, în special de la munte'>
+    <meta name=”keywords” content='webcam, maramureș, munte, baia mare, baia sprie, romania, munte, mountain, cavnic, suior, ignis, varful ignis'>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
