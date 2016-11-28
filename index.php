@@ -18,10 +18,6 @@
 <body onload="start();">
 
 <div class="cam">
-    <iframe width="504" height="376" src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | grep videoId | cut -d '\"' -f 4")?>?autoplay=1" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="cam">
     <img class="skip" title="Suior" src="http://suior.dyndns.org:3334/cgi-bin/faststream.jpg?stream=full&fps=5&rand=<?php echo time(); ?>" width="504" height="376"/>
 </div>
 
@@ -43,6 +39,10 @@
 
 <div class="cam">
     <img id="cavnic" class="skip" title="Cavnic" width="504" height="376"/>
+</div>
+
+<div class="cam">
+    <iframe width="504" height="376" src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | grep videoId | cut -d '\"' -f 4")?>?autoplay=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <?php include_once("ga.php") ?>
