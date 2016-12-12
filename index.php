@@ -12,9 +12,10 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <script type="text/javascript" src="js/script.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
+    <script src="js/script.js" type="text/javascript"></script>
     <script src="js/superski/video.js"></script>
     <script src="js/superski/videojs-contrib-hls.min.js"></script>
 </head>
