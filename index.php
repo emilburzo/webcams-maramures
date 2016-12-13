@@ -7,7 +7,8 @@
 
     <title>Camere Web din Maramureș</title>
     <meta name=”description” content='Webcam-uri în direct din zona Maramureș, în special de la munte'>
-    <meta name=”keywords” content='webcam, maramureș, munte, baia mare, baia sprie, romania, munte, cavnic, suior, ignis, varful ignis'>
+    <meta name=”keywords”
+          content='webcam, maramureș, munte, baia mare, baia sprie, romania, munte, cavnic, suior, ignis, varful ignis'>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -26,15 +27,21 @@
 </header>
 
 <div class="cam">
-    <img class="skip" title="Suior" src="http://suior.dyndns.org:3334/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>" />
+    <img class="skip" title="Suior"
+         src="http://suior.dyndns.org:3334/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         onerror="this.style.display='none'"/>
 </div>
 
 <div class="cam">
-    <img class="skip" title="Suior" src="http://suior.dyndns.org:3335/control/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>" />
+    <img class="skip" title="Suior"
+         src="http://suior.dyndns.org:3335/control/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         onerror="this.style.display='none'"/>
 </div>
 
 <div class="cam">
-    <img class="skip" title="Suior" src="http://suior.dyndns.org:3333/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>" />
+    <img class="skip" title="Suior"
+         src="http://suior.dyndns.org:3333/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         onerror="this.style.display='none'"/>
 </div>
 
 <div class="cam">
@@ -59,15 +66,17 @@
 </div>
 
 <div class="cam">
-    <img title="Cavnic" src="webcam.php?id=3" />
+    <img title="Cavnic" src="webcam.php?id=3" onerror="this.style.display='none'"/>
 </div>
 
 <div class="cam">
-    <img title="Cavnic" src="webcam.php?id=4" />
+    <img title="Cavnic" src="webcam.php?id=4" onerror="this.style.display='none'"/>
 </div>
 
 <div class="cam">
-    <iframe width="504" height="376" src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | grep videoId | cut -d '\"' -f 4")?>?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="504" height="376"
+            src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | grep videoId | cut -d '\"' -f 4") ?>?autoplay=1"
+            frameborder="0" allowfullscreen></iframe>
 </div>
 
 <?php include_once("ga.php") ?>
