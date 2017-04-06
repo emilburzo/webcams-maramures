@@ -73,12 +73,6 @@
     <img title="Cavnic" src="webcam.php?id=4" onerror="this.style.display='none'"/>
 </div>
 
-<div class="cam">
-    <iframe width="504" height="376"
-            src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | grep videoId | cut -d '\"' -f 4") ?>?autoplay=1"
-            frameborder="0" allowfullscreen></iframe>
-</div>
-
 <?php include_once("ga.php") ?>
 </body>
 </html>
