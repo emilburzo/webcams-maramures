@@ -19,11 +19,13 @@
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/superski/video.js"></script>
     <script src="js/superski/videojs-contrib-hls.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body onload="start();">
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic), în special de la munte (Șuior, Cavnic, vârful Igniș)</p>
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic), în special de la munte (Șuior, Cavnic,
+        vârful Igniș)</p>
 </header>
 
 <div class="cam">
@@ -42,6 +44,22 @@
     <img class="skip" title="Suior"
          src="http://suior.dyndns.org:3333/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
          onerror="this.style.display='none'"/>
+</div>
+
+<div class="cam">
+    <div id="webcam_bm" title="Baia Mare"></div>
+
+    <script>
+        $(function () {
+            jwplayer("webcam_bm").setup({
+                file: 'http://82.76.249.73/digilivedge/baia_mare_desktop.stream/index.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                title: "Baia Mare (by RCS&RDS)"
+            });
+        });
+    </script>
 </div>
 
 <div class="cam">
@@ -65,13 +83,8 @@
     </script>
 </div>
 
-<div class="cam">
-    <img title="Cavnic" src="webcam.php?id=3" onerror="this.style.display='none'"/>
-</div>
-
-<div class="cam">
-    <img title="Cavnic" src="webcam.php?id=4" onerror="this.style.display='none'"/>
-</div>
+<script type="text/javascript" src="js/jwplayer.js"></script>
+<script>jwplayer.key = "jScWsLuA6KaZwo3HVTDeYjOBtJsY3/SdyB6BkQ==";</script>
 
 <?php include_once("ga.php") ?>
 </body>
