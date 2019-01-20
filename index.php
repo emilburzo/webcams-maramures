@@ -17,8 +17,6 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <script src="js/script.js" type="text/javascript"></script>
-    <script src="js/superski/video.js"></script>
-    <script src="js/superski/videojs-contrib-hls.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body onload="start();">
@@ -56,6 +54,7 @@
                 height: 376,
                 width: 504,
                 autostart: true,
+                mute: true,
                 title: "Baia Mare (by RCS&RDS)"
             });
         });
@@ -63,23 +62,19 @@
 </div>
 
 <div class="cam">
-    <video id=skivid controls title="Cavnic" style="width: 504px !important; height: 376px !important;">
-        <source src="http://rtmp.streamaxia.com/ski/ski.stream/playlist.m3u8" type="application/x-mpegURL">
-    </video>
+    <div id="webcam_cavnic" title="Cavnic"></div>
 
     <script>
-        var player = videojs('skivid', {
-            controlBar: false,
-            bigPlayButton: false,
-            loadingSpinner: false,
-            textTrackDisplay: false,
-            errorDisplay: false,
-            textTrackSettings: false,
-            posterImage: false,
-            nativeControlsForTouch: true
+        $(function () {
+            jwplayer("webcam_cavnic").setup({
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/021519647717484841659610.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                mute: true,
+                title: "SuperSki Cavnic"
+            });
         });
-        player.userActive(true);
-        player.play();
     </script>
 </div>
 
