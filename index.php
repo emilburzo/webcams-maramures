@@ -22,8 +22,7 @@
 <body onload="start();">
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic), în special de la munte (Șuior, Cavnic,
-        vârful Igniș)</p>
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic), în special de la munte (Șuior, Cavnic, <strike>vârful Igniș</strike>)</p>
 </header>
 
 <div class="cam">
@@ -62,7 +61,7 @@
 </div>
 
 <div class="cam">
-    <div id="webcam_cavnic" title="Cavnic"></div>
+    <div id="webcam_cavnic" title="Cavnic - Roata 1"></div>
 
     <script>
         $(function () {
@@ -72,11 +71,29 @@
                 width: 504,
                 autostart: true,
                 mute: true,
-                title: "SuperSki Cavnic"
+                title: "SuperSki Cavnic - Roata 1"
             });
         });
     </script>
 </div>
+
+<div class="cam">
+    <div id="webcam_cavnic2" title="Cavnic - Roata 2"></div>
+
+    <script>
+        $(function () {
+            jwplayer("webcam_cavnic2").setup({
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/279853686459469995264527.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                mute: true,
+                title: "SuperSki Cavnic - Roata 2"
+            });
+        });
+    </script>
+</div>
+
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
 <script>jwplayer.key = "jScWsLuA6KaZwo3HVTDeYjOBtJsY3/SdyB6BkQ==";</script>
