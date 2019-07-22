@@ -22,7 +22,7 @@
 <body onload="start();">
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic), în special de la munte (Șuior, Cavnic, <strike>vârful Igniș</strike>)</p>
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic, Baraj Firiza), în special de la munte (Șuior, Cavnic, <strike>vârful Igniș</strike>)</p>
 </header>
 
 <div class="cam">
@@ -89,6 +89,23 @@
                 autostart: true,
                 mute: true,
                 title: "SuperSki Cavnic - Roata 2"
+            });
+        });
+    </script>
+</div>
+
+<div class="cam">
+    <div id="webcam_simared" title="Baraj Firiza - Simared"></div>
+
+    <script>
+        $(function () {
+            jwplayer("webcam_simared").setup({
+                file: 'https://live.simared.ro/camera1/stream.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                mute: true,
+                title: "Baraj Firiza - Simared"
             });
         });
     </script>
