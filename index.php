@@ -48,7 +48,9 @@
 
     <script>
         $(function () {
-            jwplayer("webcam_bm").setup({
+            var id = 'webcam_bm';
+            var player = jwplayer(id);
+            player.setup({
                 file: 'http://82.76.249.73/digilivedge/baia_mare_desktop.stream/index.m3u8',
                 height: 376,
                 width: 504,
@@ -56,39 +58,8 @@
                 mute: true,
                 title: "Baia Mare (by RCS&RDS)"
             });
-        });
-    </script>
-</div>
-
-<div class="cam">
-    <div id="webcam_cavnic" title="Cavnic - Roata 1"></div>
-
-    <script>
-        $(function () {
-            jwplayer("webcam_cavnic").setup({
-                file: 'https://live.freecam.ro:5443/LiveApp/streams/021519647717484841659610.m3u8',
-                height: 376,
-                width: 504,
-                autostart: true,
-                mute: true,
-                title: "SuperSki Cavnic - Roata 1"
-            });
-        });
-    </script>
-</div>
-
-<div class="cam">
-    <div id="webcam_cavnic2" title="Cavnic - Roata 2"></div>
-
-    <script>
-        $(function () {
-            jwplayer("webcam_cavnic2").setup({
-                file: 'https://live.freecam.ro:5443/LiveApp/streams/279853686459469995264527.m3u8',
-                height: 376,
-                width: 504,
-                autostart: true,
-                mute: true,
-                title: "SuperSki Cavnic - Roata 2"
+            player.on('error', function () {
+                document.getElementById(id).style.display = 'none';
             });
         });
     </script>
@@ -99,7 +70,9 @@
 
     <script>
         $(function () {
-            jwplayer("webcam_simared").setup({
+            var id = 'webcam_simared';
+            var player = jwplayer(id);
+            player.setup({
                 file: 'https://live.simared.ro/camera1/stream.m3u8',
                 height: 376,
                 width: 504,
@@ -107,10 +80,78 @@
                 mute: true,
                 title: "Baraj Firiza - Simared"
             });
+            player.on('error', function () {
+                document.getElementById(id).style.display = 'none';
+            });
         });
     </script>
 </div>
 
+<div class="cam">
+    <div id="webcam_cavnic" title="Cavnic - Roata 1"></div>
+
+    <script>
+        $(function () {
+            var id = 'webcam_cavnic';
+            var player = jwplayer(id);
+            player.setup({
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/021519647717484841659610.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                mute: true,
+                title: "SuperSki Cavnic - Roata 1"
+            });
+            player.on('error', function () {
+                document.getElementById(id).style.display = 'none';
+            });
+        });
+    </script>
+</div>
+
+<div class="cam">
+    <div id="webcam_cavnic2" title="Cavnic - Roata 2"></div>
+
+    <script>
+        $(function () {
+            var id = 'webcam_cavnic2';
+            var player = jwplayer(id);
+            player.setup({
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/279853686459469995264527.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                mute: true,
+                title: "SuperSki Cavnic - Roata 2"
+            });
+            player.on('error', function () {
+                document.getElementById(id).style.display = 'none';
+            });
+        });
+    </script>
+</div>
+
+<div class="cam">
+    <div id="webcam_cavnic3" title="Cavnic - Roata 3"></div>
+
+    <script>
+        $(function () {
+            var id = 'webcam_cavnic3';
+            var player = jwplayer(id);
+            player.setup({
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/363047394240648939377512.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                mute: true,
+                title: "SuperSki Cavnic - Roata 3"
+            });
+            player.on('error', function () {
+                document.getElementById(id).style.display = 'none';
+            });
+        });
+    </script>
+</div>
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
 <script>jwplayer.key = "jScWsLuA6KaZwo3HVTDeYjOBtJsY3/SdyB6BkQ==";</script>
