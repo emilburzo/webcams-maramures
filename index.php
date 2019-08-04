@@ -22,28 +22,29 @@
 <body onload="start();">
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic, Baraj Firiza), în special de la munte (Șuior, Cavnic, <strike>vârful Igniș</strike>)</p>
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic, Baraj Firiza), în special de la munte
+        (Șuior, Cavnic, <strike>vârful Igniș</strike>)</p>
 </header>
 
-<div class="cam">
+<div id="webcam_suior_1_wrapper" class="cam">
     <img class="skip" title="Suior"
          src="http://suior.dyndns.org:3334/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
-         onerror="this.style.display='none'"/>
+         onerror="document.getElementById('webcam_suior_1_wrapper').style.display = 'none';"/>
 </div>
 
-<div class="cam">
+<div id="webcam_suior_2_wrapper" class="cam">
     <img class="skip" title="Suior"
          src="http://suior.dyndns.org:3335/control/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
-         onerror="this.style.display='none'"/>
+         onerror="document.getElementById('webcam_suior_2_wrapper').style.display = 'none';"/>
 </div>
 
-<div class="cam">
+<div id="webcam_suior_3_wrapper" class="cam">
     <img class="skip" title="Suior"
          src="http://suior.dyndns.org:3333/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
-         onerror="this.style.display='none'"/>
+         onerror="document.getElementById('webcam_suior_3_wrapper').style.display = 'none';"/>
 </div>
 
-<div class="cam">
+<div id="webcam_bm_wrapper" class="cam">
     <div id="webcam_bm" title="Baia Mare"></div>
 
     <script>
@@ -59,13 +60,13 @@
                 title: "Baia Mare (by RCS&RDS)"
             });
             player.on('error', function () {
-                document.getElementById(id).style.display = 'none';
+                document.getElementById(id + '_wrapper').style.display = 'none';
             });
         });
     </script>
 </div>
 
-<div class="cam">
+<div id="webcam_simared_wrapper" class="cam">
     <div id="webcam_simared" title="Baraj Firiza - Simared"></div>
 
     <script>
@@ -81,13 +82,13 @@
                 title: "Baraj Firiza - Simared"
             });
             player.on('error', function () {
-                document.getElementById(id).style.display = 'none';
+                document.getElementById(id + '_wrapper').style.display = 'none';
             });
         });
     </script>
 </div>
 
-<div class="cam">
+<div id="webcam_cavnic_wrapper" class="cam">
     <div id="webcam_cavnic" title="Cavnic - Roata 1"></div>
 
     <script>
@@ -103,13 +104,13 @@
                 title: "SuperSki Cavnic - Roata 1"
             });
             player.on('error', function () {
-                document.getElementById(id).style.display = 'none';
+                document.getElementById(id + '_wrapper').style.display = 'none';
             });
         });
     </script>
 </div>
 
-<div class="cam">
+<div id="webcam_cavnic3_wrapper" class="cam">
     <div id="webcam_cavnic3" title="Cavnic - Roata 3"></div>
 
     <script>
@@ -125,13 +126,13 @@
                 title: "SuperSki Cavnic - Roata 3"
             });
             player.on('error', function () {
-                document.getElementById(id).style.display = 'none';
+                document.getElementById(id + '_wrapper').style.display = 'none';
             });
         });
     </script>
 </div>
 
-<div class="cam">
+<div id="webcam_cavnic2_wrapper" class="cam">
     <div id="webcam_cavnic2" title="Cavnic - Roata 2"></div>
 
     <script>
@@ -147,7 +148,7 @@
                 title: "SuperSki Cavnic - Roata 2"
             });
             player.on('error', function () {
-                document.getElementById(id).style.display = 'none';
+                document.getElementById(id + '_wrapper').style.display = 'none';
             });
         });
     </script>
