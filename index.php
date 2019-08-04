@@ -16,10 +16,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
-    <script src="js/script.js" type="text/javascript"></script>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
-<body onload="start();">
+<body>
 
 <header>
     <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic, Baraj Firiza), în special de la munte
