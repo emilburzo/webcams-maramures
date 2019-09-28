@@ -39,8 +39,14 @@
 
 <div id="webcam_suior_3_wrapper" class="cam">
     <img class="skip" title="Suior"
-         src="http://suior.dyndns.org:3333/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         src="http://82.79.217.239:3333/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_3_wrapper').style.display = 'none';"/>
+</div>
+
+<div id="webcam_suior_4_wrapper" class="cam">
+    <img class="skip" title="Suior"
+         src="http://82.79.217.239:3336/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         onerror="document.getElementById('webcam_suior_4_wrapper').style.display = 'none';"/>
 </div>
 
 <div id="webcam_bm_wrapper" class="cam">
@@ -109,28 +115,6 @@
     </script>
 </div>
 
-<div id="webcam_cavnic3_wrapper" class="cam">
-    <div id="webcam_cavnic3" title="Cavnic - Roata 3"></div>
-
-    <script>
-        $(function () {
-            var id = 'webcam_cavnic3';
-            var player = jwplayer(id);
-            player.setup({
-                file: 'https://live.freecam.ro:5443/LiveApp/streams/363047394240648939377512.m3u8',
-                height: 376,
-                width: 504,
-                autostart: true,
-                mute: true,
-                title: "SuperSki Cavnic - Roata 3"
-            });
-            player.on('error', function () {
-                document.getElementById(id + '_wrapper').style.display = 'none';
-            });
-        });
-    </script>
-</div>
-
 <div id="webcam_cavnic2_wrapper" class="cam">
     <div id="webcam_cavnic2" title="Cavnic - Roata 2"></div>
 
@@ -145,6 +129,28 @@
                 autostart: true,
                 mute: true,
                 title: "SuperSki Cavnic - Roata 2"
+            });
+            player.on('error', function () {
+                document.getElementById(id + '_wrapper').style.display = 'none';
+            });
+        });
+    </script>
+</div>
+
+<div id="webcam_cavnic3_wrapper" class="cam">
+    <div id="webcam_cavnic3" title="Cavnic - Roata 3"></div>
+
+    <script>
+        $(function () {
+            var id = 'webcam_cavnic3';
+            var player = jwplayer(id);
+            player.setup({
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/363047394240648939377512.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                mute: true,
+                title: "SuperSki Cavnic - Roata 3"
             });
             player.on('error', function () {
                 document.getElementById(id + '_wrapper').style.display = 'none';
