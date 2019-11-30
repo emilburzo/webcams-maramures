@@ -164,7 +164,7 @@
 
     <script>
         $(function () {
-            var id = 'webcam_cavnic3';
+            var id = 'webcam_cavnic_icoana';
             var player = jwplayer(id);
             player.setup({
                 file: 'https://live.webcamromania.ro/WR079/wrcam_079/playlist.m3u8',
