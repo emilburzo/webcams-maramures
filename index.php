@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script async defer data-domain="maramures.webcam" src="https://plausible.emilburzo.com/js/plausible.js"></script>
 </head>
 <body>
 
@@ -181,11 +182,12 @@
     </script>
 </div>
 
-
+<div>
+    <iframe width=504 height=376 src="https://play10.player.im/p/if/?uid=1&sid=102&cam=WR079" allowfullscreen
+            name="Webcam Cavnic" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
 <script>jwplayer.key = "jScWsLuA6KaZwo3HVTDeYjOBtJsY3/SdyB6BkQ==";</script>
-
-<?php include_once("ga.php") ?>
 </body>
 </html>
