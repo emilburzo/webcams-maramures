@@ -160,31 +160,9 @@
     </script>
 </div>
 
-<div id="webcam_cavnic_icoana_wrapper" class="cam">
-    <div id="webcam_cavnic_icoana" title="Cavnic - Icoana"></div>
-
-    <script>
-        $(function () {
-            var id = 'webcam_cavnic_icoana';
-            var player = jwplayer(id);
-            player.setup({
-                file: 'https://live.webcamromania.ro/WR079/wrcam_079/playlist.m3u8',
-                height: 376,
-                width: 504,
-                autostart: true,
-                mute: true,
-                title: "Cavnic - Icoana"
-            });
-            player.on('error', function () {
-                document.getElementById(id + '_wrapper').style.display = 'none';
-            });
-        });
-    </script>
-</div>
-
-<div>
-    <iframe width=504 height=376 src="https://play10.player.im/p/if/?uid=1&sid=102&cam=WR079" allowfullscreen
-            name="Webcam Cavnic" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+<div title="Cavnic - Icoana" class="cam">
+    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
+            name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
