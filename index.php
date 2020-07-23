@@ -93,6 +93,28 @@
     </script>
 </div>
 
+<div id="webcam_baiasprie_wrapper" class="cam">
+    <div id="webcam_baiasprie" title="Baia Sprie"></div>
+
+    <script>
+        $(function () {
+            var id = 'webcam_baiasprie';
+            var player = jwplayer(id);
+            player.setup({
+                file: 'http://link7.ro:8080/hls/live.stream.m3u8',
+                height: 376,
+                width: 504,
+                autostart: true,
+                mute: true,
+                title: "Baia Sprie"
+            });
+            player.on('error', function () {
+                document.getElementById(id + '_wrapper').style.display = 'none';
+            });
+        });
+    </script>
+</div>
+
 <div id="webcam_cavnic_wrapper" class="cam">
     <div id="webcam_cavnic" title="Cavnic - Roata 1"></div>
 
@@ -163,6 +185,12 @@
     <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
             name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
+
+<!--<div class="cam">-->
+<!--    <iframe width="504" height="376"-->
+<!--            src="https://www.youtube.com/embed/74Xt3MbGIYI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>-->
+<!--    </iframe>-->
+<!--</div>-->
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
 <script>jwplayer.key = "jScWsLuA6KaZwo3HVTDeYjOBtJsY3/SdyB6BkQ==";</script>
