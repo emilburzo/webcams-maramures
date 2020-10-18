@@ -21,7 +21,7 @@
 <body>
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Baia Sprie, Cavnic, Baraj Firiza), în special de la munte
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Baia Sprie, Cavnic, Baraj Firiza), în special de la munte
         (Șuior, Cavnic, <strike>vârful Igniș</strike>)</p>
 </header>
 
