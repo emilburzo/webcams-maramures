@@ -17,7 +17,6 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script async defer data-domain="maramures.webcam" src="https://plausible.emilburzo.com/js/plausible.js"></script>
 </head>
 <body>
 
