@@ -8,7 +8,7 @@
     <title>Camere Web din Maramureș</title>
     <meta name=”description” content='Webcam-uri în direct din zona Maramureș, în special de la munte'>
     <meta name=”keywords”
-          content='webcam, maramureș, munte, baia mare, baia sprie, romania, munte, cavnic, suior, ignis, varful ignis'>
+          content='webcam, maramureș, munte, baia mare, baia sprie, romania, munte, cavnic, suior, ignis, varful ignis, borsa, borșa, pasul prislop'>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -21,8 +21,9 @@
 <body>
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Baia Sprie, Cavnic, Baraj Firiza), în special de la munte
-        (Șuior, Cavnic, <strike>vârful Igniș</strike>)</p>
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Baia Sprie, Cavnic, Baraj Firiza, Borșa), în
+        special de la munte
+        (Șuior, Cavnic, <strike>vârful Igniș</strike>, Telescaun Borșa)</p>
 </header>
 
 <div id="webcam_suior_1_wrapper" class="cam">
@@ -207,6 +208,17 @@
     <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
             name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
+
+<div title="Borșa - Telescaun" class="cam">
+    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o2w223" allowfullscreen
+            name="Borșa - Telescaun" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
+
+<!--<div id="webcam_borsa_prislop" class="cam">-->
+<!--    <img width=504 height=376 title="Borșa - Pasul Prislop"-->
+<!--         src="https://image.webcamromania.ro/camera/030/snap/big.jpg?rand=1609918812"-->
+<!--         onerror="document.getElementById('webcam_borsa_prislop').style.display = 'none';"/>-->
+<!--</div>-->
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
 <script>jwplayer.key = "jScWsLuA6KaZwo3HVTDeYjOBtJsY3/SdyB6BkQ==";</script>
