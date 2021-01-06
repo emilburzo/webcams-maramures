@@ -145,7 +145,7 @@
             var id = 'webcam_cavnic';
             var player = jwplayer(id);
             player.setup({
-                file: 'https://cloud.freecam.ro:5443/LiveApp/streams/828770831645636671004007.m3u8',
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/238240691967830141202578.m3u8',
                 height: 376,
                 width: 504,
                 autostart: true,
@@ -167,7 +167,7 @@
             var id = 'webcam_cavnic2';
             var player = jwplayer(id);
             player.setup({
-                file: 'https://cloud.freecam.ro:5443/LiveApp/streams/760748575099125852227274.m3u8',
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/298364518216581967384953.m3u8',
                 height: 376,
                 width: 504,
                 autostart: true,
@@ -189,7 +189,7 @@
             var id = 'webcam_cavnic3';
             var player = jwplayer(id);
             player.setup({
-                file: 'https://cloud.freecam.ro:5443/LiveApp/streams/073706757735866848843790.m3u8',
+                file: 'https://live.freecam.ro:5443/LiveApp/streams/937528909720485946133487.m3u8',
                 height: 376,
                 width: 504,
                 autostart: true,
