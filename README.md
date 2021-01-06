@@ -1,5 +1,4 @@
 webcams-maramures
 =================
 
-http://maramures.webcam
-
+http://webcam.maramures.io/
