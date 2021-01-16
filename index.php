@@ -138,6 +138,11 @@
     </script>
 </div>
 
+<div title="Lacul Mogoșa" class="cam">
+    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o2v223" allowfullscreen
+            name="Lacul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
+
 <div id="webcam_cavnic_wrapper" class="cam">
     <div id="webcam_cavnic" title="Cavnic - Roata 1"></div>
 
