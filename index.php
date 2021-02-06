@@ -21,7 +21,7 @@
 <body>
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Baia Sprie, Cavnic, Baraj Firiza, Borșa), în
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, <strike>Baia Sprie</strike>, Cavnic, Baraj Firiza, Borșa), în
         special de la munte
         (Șuior, Lacul Mogoșa / Bodi, Cavnic, <strike>vârful Igniș</strike>, Telescaun Borșa)</p>
 </header>
@@ -108,28 +108,6 @@
                 autostart: true,
                 mute: true,
                 title: "Baraj Firiza - Simared"
-            });
-            player.on('error', function () {
-                document.getElementById(id + '_wrapper').style.display = 'none';
-            });
-        });
-    </script>
-</div>
-
-<div id="webcam_baiasprie_wrapper" class="cam">
-    <div id="webcam_baiasprie" title="Baia Sprie"></div>
-
-    <script>
-        $(function () {
-            var id = 'webcam_baiasprie';
-            var player = jwplayer(id);
-            player.setup({
-                file: 'http://link7.ro:8080/hls/live.stream.m3u8',
-                height: 376,
-                width: 504,
-                autostart: true,
-                mute: true,
-                title: "Baia Sprie"
             });
             player.on('error', function () {
                 document.getElementById(id + '_wrapper').style.display = 'none';
