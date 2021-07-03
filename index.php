@@ -24,7 +24,7 @@ include 'functions.php';
 <body>
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Baia Sprie, Cavnic, Baraj Firiza, Borșa),
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, <strike>Baia Sprie</strike>, Cavnic, Baraj Firiza, Borșa),
         în special de la munte (Șuior, Lacul Mogoșa / Bodi, Cavnic, <strike>vârful Igniș</strike>, Telescaun Borșa)</p>
 </header>
 
