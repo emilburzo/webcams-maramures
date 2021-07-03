@@ -58,17 +58,26 @@ include 'functions.php';
 
 <?php jwplayer_cam("webcam_simared", "Baraj Firiza - Simared", "https://live.simared.ro/camera1/stream.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_lacul_mogosa", "Lacul Mogoșa", "WR/WR016/wrcam_016/playlist.m3u8"); ?>
+<div title="Lacul Mogoșa" class="cam">
+    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o2v223" allowfullscreen
+            name="Lacul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
 
-<?php jwplayer_cam("webcam_cavnic_roata1", "Cavnic - Roata 1", "https://live.freecam.ro:5443/LiveApp/streams/238240691967830141202578.m3u8"); ?>
+<?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "https://live.freecam.ro:5443/LiveApp/streams/238240691967830141202578.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic_roata2", "Cavnic - Roata 2", "https://live.freecam.ro:5443/LiveApp/streams/298364518216581967384953.m3u8"); ?>
+<?php jwplayer_cam("webcam_cavnic2", "Cavnic - Roata 2", "https://live.freecam.ro:5443/LiveApp/streams/298364518216581967384953.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic_roata3", "Cavnic - Roata 3", "https://live.freecam.ro:5443/LiveApp/streams/937528909720485946133487.m3u8"); ?>
+<?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "https://live.freecam.ro:5443/LiveApp/streams/937528909720485946133487.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic_icoana", "Cavnic - Icoana", "WR/WR079/wrcam_079/playlist.m3u8"); ?>
+<div title="Cavnic - Icoana" class="cam">
+    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
+            name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
 
-<?php jwplayer_cam("webcam_borsa_telescaun", "Borșa - Telescaun", "WR/WR026/wrcam_026/playlist.m3u8"); ?>
+<div title="Borșa - Telescaun" class="cam">
+    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o2w223" allowfullscreen
+            name="Borșa - Telescaun" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
 <script>jwplayer.key = "jScWsLuA6KaZwo3HVTDeYjOBtJsY3/SdyB6BkQ==";</script>
