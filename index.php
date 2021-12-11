@@ -63,11 +63,11 @@ include 'functions.php';
             name="Lacul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
-<?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "https://live.freecam.ro:5443/LiveApp/streams/partia-de-schi-cavnic-roata-1.m3u8"); ?>
+<?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "https://webcam.maramures.io/LiveApp/streams/partia-de-schi-cavnic-roata-1.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic2", "Cavnic - Roata 2", "https://live.freecam.ro:5443/LiveApp/streams/partia-de-schi-cavnic-roata-2.m3u8"); ?>
+<?php jwplayer_cam("webcam_cavnic2", "Cavnic - Roata 2", "https://webcam.maramures.io/LiveApp/streams/partia-de-schi-cavnic-roata-2.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "https://live.freecam.ro:5443/LiveApp/streams/061258892506091977529912.m3u8"); ?>
+<?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "https://webcam.maramures.io/LiveApp/streams/061258892506091977529912.m3u8"); ?>
 
 <div title="Cavnic - Icoana" class="cam">
     <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
