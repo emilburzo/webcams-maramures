@@ -25,7 +25,7 @@ include 'functions.php';
 
 <header>
     <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, <strike>Baia Sprie</strike>, Cavnic, Baraj Firiza, Borșa),
-        în special de la munte (Șuior, Lacul Mogoșa / Bodi, Cavnic, <strike>vârful Igniș</strike>, Telescaun Borșa)</p>
+        în special de la munte (Șuior, Lacul Mogoșa / Bodi, Cavnic, <strike>vârful Igniș</strike>, Stațiunea Izvoare, Telescaun și pârtie Borșa)</p>
 </header>
 
 <div id="webcam_suior_1_wrapper" class="cam">
@@ -72,6 +72,16 @@ include 'functions.php';
 <div title="Cavnic - Icoana" class="cam">
     <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
             name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
+
+<div title="Stațiunea Izvoare - Pârtie" class="cam">
+    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534p2y233" allowfullscreen
+            name="Stațiunea Izvoare - Pârtie" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
+
+<div title="Borșa - Cota 1400" class="cam">
+    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534p2z2y2" allowfullscreen
+            name="Borșa - Cota 1400" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <div title="Borșa - Telescaun" class="cam">
