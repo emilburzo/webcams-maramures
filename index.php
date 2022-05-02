@@ -30,25 +30,25 @@ include 'functions.php';
 
 <div id="webcam_suior_1_wrapper" class="cam">
     <img class="skip" title="Suior"
-         src="http://camsuior.electrotrend.ro:3334/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         src="/camsuior3334/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_1_wrapper').style.display = 'none';"/>
 </div>
 
 <div id="webcam_suior_2_wrapper" class="cam">
     <img class="skip" title="Suior"
-         src="http://camsuior.electrotrend.ro:3335/control/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         src="/camsuior3335//faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_2_wrapper').style.display = 'none';"/>
 </div>
 
 <div id="webcam_suior_3_wrapper" class="cam">
     <img class="skip" title="Suior"
-         src="http://camsuior.electrotrend.ro:3333/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         src="/camsuior3333/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_3_wrapper').style.display = 'none';"/>
 </div>
 
 <div id="webcam_suior_4_wrapper" class="cam">
     <img class="skip" title="Suior"
-         src="http://camsuior.electrotrend.ro:3336/cgi-bin/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
+         src="/camsuior3336/faststream.jpg?stream=full&fps=3&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_4_wrapper').style.display = 'none';"/>
 </div>
 
