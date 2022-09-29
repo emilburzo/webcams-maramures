@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webcams-maramures
+  labels:
+    app: webcams-maramures
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webcams-maramures
+  template:
+    metadata:
+      labels:
+        app: webcams-maramures
+    spec:
+      containers:
+        - name: webcams-maramures
+          image: emilburzo/webcams-maramures:latest
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webcams-maramures
+  labels:
+    run: webcams-maramures
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+  selector:
+    app: webcams-maramures
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webcams-maramures
+spec:
+  rules:
+    - host: webcam.maramures.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: webcams-maramures
+                port:
+                  number: 8080
