@@ -36,7 +36,7 @@ include 'functions.php';
 
 <div id="webcam_suior_2_wrapper" class="cam">
     <img class="skip" title="Suior"
-         src="/camsuior3335//faststream.jpg?stream=full&fps=3&framecount=1000&rand=<?php echo time(); ?>"
+         src="/camsuior3335/faststream.jpg?stream=full&fps=3&framecount=1000&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_2_wrapper').style.display = 'none';"/>
 </div>
 
