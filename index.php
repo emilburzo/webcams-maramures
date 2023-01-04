@@ -11,7 +11,7 @@ include 'functions.php';
     <title>Camere Web din Maramureș</title>
     <meta name=”description” content='Webcam-uri în direct din zona Maramureș, în special de la munte'>
     <meta name=”keywords”
-          content='webcam, maramureș, munte, baia mare, baia sprie, romania, munte, cavnic, suior, lacul mogoșa, lacul bodi, ignis, varful ignis, borsa, borșa, pasul prislop'>
+          content='webcam, maramureș, munte, baia mare, romania, munte, cavnic, suior, lacul mogoșa, lacul bodi, ignis, varful ignis, borsa, borșa, pasul prislop'>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -24,7 +24,7 @@ include 'functions.php';
 <body>
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, <strike>Baia Sprie</strike>, Cavnic, <strike>Baraj Firiza</strike>, Borșa),
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Cavnic, <strike>Baraj Firiza</strike>, Borșa),
         în special de la munte (Șuior, Lacul Mogoșa / Bodi, Cavnic, <strike>vârful Igniș</strike>, Stațiunea Izvoare, Telescaun și pârtie Borșa)</p>
 </header>
 
