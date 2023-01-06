@@ -9,6 +9,8 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      - name: Set SHORT_SHA
+        run: echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - uses: actions/checkout@v2
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -26,4 +28,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: emilburzo/webcams-maramures:latest,emilburzo/webcams-maramures:${{ github.run_number }}
+          tags: emilburzo/webcams-maramures:latest,emilburzo/webcams-maramures:${{ github.run_number }},emilburzo/webcams-maramures:${{ env.SHORT_SHA }}

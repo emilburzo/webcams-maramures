@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: webcams-maramures
-          image: emilburzo/webcams-maramures:latest
+          image: emilburzo/webcams-maramures:SHORT_SHA
           ports:
             - containerPort: 8080
 ---
