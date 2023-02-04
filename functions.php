@@ -10,8 +10,8 @@ function jwplayer_cam($id, $title, $m3u8)
             var player = jwplayer("$id");
             player.setup({
                 file: "$m3u8",
-                height: 376,
-                width: 504,
+                height: 280,
+                width: 500,
                 autostart: true,
                 mute: true,
                 title: "$title"

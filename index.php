@@ -57,7 +57,7 @@ include 'functions.php';
 <?php jwplayer_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://webcam.maramures.io/LiveApp/streams/222562831095066913214038.m3u8"); ?>
 
 <div title="Lacul Mogoșa" class="cam">
-    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o2v223" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o2v223" allowfullscreen
             name="Lacul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
@@ -68,24 +68,24 @@ include 'functions.php';
 <?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "https://live.freecam.ro:5443/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
 
 <div title="Cavnic - Icoana" class="cam">
-    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
             name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <div title="Stațiunea Izvoare - Pârtie" class="cam">
-    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534p2y233" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534p2y233" allowfullscreen
             name="Stațiunea Izvoare - Pârtie" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <?php jwplayer_cam("webcam_izvoare_brazi", "Stațiunea Izvoare - Pârtia Brazi", "https://cloud.freecam.ro:5443/LiveApp/streams/partia-de-schi-izvoare-maramures.m3u8"); ?>
 
 <div title="Borșa - Cota 1400" class="cam">
-    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534p2z2y2" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534p2z2y2" allowfullscreen
             name="Borșa - Cota 1400" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <div title="Borșa - Telescaun" class="cam">
-    <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534o2w223" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o2w223" allowfullscreen
             name="Borșa - Telescaun" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
