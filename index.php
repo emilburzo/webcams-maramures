@@ -77,6 +77,8 @@ include 'functions.php';
             name="Stațiunea Izvoare - Pârtie" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
+<?php jwplayer_cam("webcam_izvoare_brazi", "Stațiunea Izvoare - Pârtia Brazi", "https://cloud.freecam.ro:5443/LiveApp/streams/partia-de-schi-izvoare-maramures.m3u8"); ?>
+
 <div title="Borșa - Cota 1400" class="cam">
     <iframe width=504 height=376 src="https://play.webcamromania.ro/b3p4l5g5v534p2z2y2" allowfullscreen
             name="Borșa - Cota 1400" scrolling="no" seamless="seamless" frameborder="0"></iframe>
