@@ -54,7 +54,7 @@ include 'functions.php';
 
 <?php jwplayer_cam("webcam_bm", "Baia Mare", "https://digilive.rcs-rds.ro/digilivedge/baia_mare_desktop.stream/index.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://webcam.maramures.io/LiveApp/streams/222562831095066913214038.m3u8"); ?>
+<?php jwplayer_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://live2.freecam.ro:5443/LiveApp/streams/aeroclubul-romaniei-aeroclubul-baia-mare.m3u8"); ?>
 
 <div title="Lacul Mogoșa" class="cam">
     <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o2v223" allowfullscreen
