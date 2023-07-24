@@ -25,7 +25,7 @@ include 'functions.php';
 
 <header>
     <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Cavnic, <strike>Baraj Firiza</strike>, Borșa),
-        în special de la munte (Șuior, Lacul Mogoșa / Bodi, Cavnic, <strike>vârful Igniș</strike>, Stațiunea Izvoare, Telescaun și pârtie Borșa)</p>
+        în special de la munte (Șuior, Lacul Mogoșa / Bodi, Cavnic, vârful Igniș, Stațiunea Izvoare, Telescaun și pârtie Borșa)</p>
 </header>
 
 <div id="webcam_suior_1_wrapper" class="cam">
@@ -55,6 +55,10 @@ include 'functions.php';
 <?php jwplayer_cam("webcam_bm", "Baia Mare", "https://digilive.rcs-rds.ro/digilivedge/baia_mare_desktop.stream/index.m3u8"); ?>
 
 <?php jwplayer_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://live2.freecam.ro:5443/LiveApp/streams/aeroclubul-romaniei-aeroclubul-baia-mare.m3u8"); ?>
+
+<div class="cam">
+    <iframe width=500 height=280 src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | tr '{' '\n' | grep videoId | head -n 1 | cut -d '\"' -f 4")?>?autoplay=1" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <div title="Lacul Mogoșa" class="cam">
     <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o2v223" allowfullscreen
