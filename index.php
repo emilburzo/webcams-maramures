@@ -72,25 +72,29 @@ include 'functions.php';
 <?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "https://live.freecam.ro:5443/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
 
 <div title="Cavnic - Icoana" class="cam">
-    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o21353" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o21353/embed.html" allowfullscreen
             name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <div title="Stațiunea Izvoare - Pârtie" class="cam">
-    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534p2y233" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamlivestream.com/livemmpi/embed.html" allowfullscreen
             name="Stațiunea Izvoare - Pârtie" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <?php jwplayer_cam("webcam_izvoare_brazi", "Stațiunea Izvoare - Pârtia Brazi", "https://cloud.freecam.ro:5443/LiveApp/streams/partia-de-schi-izvoare-maramures.m3u8"); ?>
 
 <div title="Borșa - Cota 1400" class="cam">
-    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534p2z2y2" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534p2z2y2/embed.html" allowfullscreen
             name="Borșa - Cota 1400" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <div title="Borșa - Telescaun" class="cam">
-    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o2w223" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o2w223/embed.html" allowfullscreen
             name="Borșa - Telescaun" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
+
+<div class="cam">
+    <iframe width=500 height=280 src="https://www.youtube.com/embed/s4zJRU1XjM4?si=XnU7tVi7asVOcF9k&autoplay=1&mute=1" title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
