@@ -61,8 +61,13 @@ include 'functions.php';
 </div>
 
 <div title="Lacul Mogoșa" class="cam">
-    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o2v223" allowfullscreen
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o2v223/embed.html" allowfullscreen
             name="Lacul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
+
+<div title="Parcare Lacul Mogoșa" class="cam">
+    <iframe width=500 height=280 src="https://play.webcamromania.ro/b3p4l5g5v534o23333/embed.html" allowfullscreen
+            name="Parcare Lacul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "https://live.freecam.ro:5443/LiveApp/streams/partia-de-schi-cavnic-roata-1.m3u8"); ?>
