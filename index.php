@@ -88,18 +88,14 @@ include 'functions.php';
 
 <?php jwplayer_cam("webcam_izvoare_brazi", "Stațiunea Izvoare - Pârtia Brazi", "https://cloud.freecam.ro:5443/LiveApp/streams/partia-de-schi-izvoare-maramures.m3u8"); ?>
 
-<div title="Borșa - Cota 1400" class="cam">
-    <iframe width=500 height=280 src="/b3p4l5g5v534p2z2y2/embed.html" allowfullscreen
-            name="Borșa - Cota 1400" scrolling="no" seamless="seamless" frameborder="0"></iframe>
-</div>
+<!--<div title="Borșa - Cota 1400" class="cam">-->
+<!--    <iframe width=500 height=280 src="/b3p4l5g5v534p2z2y2/embed.html" allowfullscreen-->
+<!--            name="Borșa - Cota 1400" scrolling="no" seamless="seamless" frameborder="0"></iframe>-->
+<!--</div>-->
 
 <div title="Borșa - Telescaun" class="cam">
     <iframe width=500 height=280 src="/b3p4l5g5v534o2w223/embed.html" allowfullscreen
             name="Borșa - Telescaun" scrolling="no" seamless="seamless" frameborder="0"></iframe>
-</div>
-
-<div class="cam">
-    <iframe width=500 height=280 src="https://www.youtube.com/embed/s4zJRU1XjM4?si=XnU7tVi7asVOcF9k&autoplay=1&mute=1" title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
