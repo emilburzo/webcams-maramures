@@ -86,11 +86,6 @@ include 'functions.php';
             name="Stațiunea Izvoare - Pârtie" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
-<div title="Simared - Baraj Firiza" class="cam">
-    <iframe width=500 height=280 src="https://rtsp.me/embed/eBFGEdNt/" allowfullscreen
-            name="Simared - Baraj Firiza" scrolling="no" seamless="seamless" frameborder="0"></iframe>
-</div>
-
 <?php jwplayer_cam("webcam_izvoare_brazi", "Stațiunea Izvoare - Pârtia Brazi", "https://cloud.freecam.ro:5443/LiveApp/streams/partia-de-schi-izvoare-maramures.m3u8"); ?>
 
 <!--<div title="Borșa - Cota 1400" class="cam">-->
@@ -101,6 +96,11 @@ include 'functions.php';
 <div title="Borșa - Telescaun" class="cam">
     <iframe width=500 height=280 src="/b3p4l5g5v534o2w223/embed.html" allowfullscreen
             name="Borșa - Telescaun" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
+
+<div title="Simared - Baraj Firiza" class="cam">
+    <iframe width=500 height=280 src="https://rtsp.me/embed/eBFGEdNt/" allowfullscreen
+            name="Simared - Baraj Firiza" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <script type="text/javascript" src="js/jwplayer.js"></script>
