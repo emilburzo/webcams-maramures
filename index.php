@@ -60,10 +60,10 @@ include 'functions.php';
     <iframe width=500 height=280 src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | tr '{' '\n' | grep videoId | head -n 1 | cut -d '\"' -f 4 | tr -d '\n'")?>?autoplay=1&mute=1"  title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<div title="Lacul Mogoșa" class="cam">
-    <iframe width=500 height=280 src="/b3p4l5g5v534o2v223/embed.html" allowfullscreen
-            name="Lacul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>
-</div>
+<!--<div title="Lacul Mogoșa" class="cam">-->
+<!--    <iframe width=500 height=280 src="/b3p4l5g5v534o2v223/embed.html" allowfullscreen-->
+<!--            name="Lacul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>-->
+<!--</div>-->
 
 <div title="Parcare Lacul Mogoșa" class="cam">
     <iframe width=500 height=280 src="/b3p4l5g5v534o23333/embed.html" allowfullscreen
@@ -76,10 +76,10 @@ include 'functions.php';
 
 <?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "https://live.freecam.ro:5443/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
 
-<div title="Cavnic - Icoana" class="cam">
-    <iframe width=500 height=280 src="/b3p4l5g5v534o21353/embed.html" allowfullscreen
-            name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>
-</div>
+<!--<div title="Cavnic - Icoana" class="cam">-->
+<!--    <iframe width=500 height=280 src="/b3p4l5g5v534o21353/embed.html" allowfullscreen-->
+<!--            name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>-->
+<!--</div>-->
 
 <div title="Stațiunea Izvoare - Pârtie" class="cam">
     <iframe width=500 height=280 src="https://play.webcamlivestream.com/livemmpi/embed.html" allowfullscreen
