@@ -24,7 +24,7 @@ include 'functions.php';
 <body>
 
 <header>
-    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Cavnic, <strike>Baraj Firiza</strike>, Borșa),
+    <p>Webcam-uri în direct din zona Maramureș (Baia Mare, Tăuții-Măgherăuș, Cavnic, Baraj Firiza, Borșa),
         în special de la munte (Șuior, Lacul Mogoșa / Bodi, Cavnic, vârful Igniș, Stațiunea Izvoare, Telescaun și pârtie Borșa)</p>
 </header>
 
@@ -84,6 +84,11 @@ include 'functions.php';
 <div title="Stațiunea Izvoare - Pârtie" class="cam">
     <iframe width=500 height=280 src="https://play.webcamlivestream.com/livemmpi/embed.html" allowfullscreen
             name="Stațiunea Izvoare - Pârtie" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+</div>
+
+<div title="Simared - Baraj Firiza" class="cam">
+    <iframe width=500 height=280 src="https://rtsp.me/embed/eBFGEdNt/" allowfullscreen
+            name="Simared - Baraj Firiza" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
 <?php jwplayer_cam("webcam_izvoare_brazi", "Stațiunea Izvoare - Pârtia Brazi", "https://cloud.freecam.ro:5443/LiveApp/streams/partia-de-schi-izvoare-maramures.m3u8"); ?>
