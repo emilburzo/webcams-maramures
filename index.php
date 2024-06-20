@@ -99,7 +99,7 @@ include 'functions.php';
 </div>
 
 <div title="Simared - Baraj Firiza" class="cam">
-    <iframe width=500 height=280 src="https://rtsp.me/embed/eBFGEdNt/" allowfullscreen
+    <iframe width=500 height=280 src="https://rtsp.me/embed/fYstFyAz/" allowfullscreen
             name="Simared - Baraj Firiza" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
