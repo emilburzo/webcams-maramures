@@ -76,11 +76,6 @@ include 'functions.php';
 
 <?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "https://live.freecam.ro:5443/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
 
-<!--<div title="Cavnic - Icoana" class="cam">-->
-<!--    <iframe width=500 height=280 src="/b3p4l5g5v534o21353/embed.html" allowfullscreen-->
-<!--            name="Cavnic - Icoana" scrolling="no" seamless="seamless" frameborder="0"></iframe>-->
-<!--</div>-->
-
 <div title="Stațiunea Izvoare - Pârtie" class="cam">
     <iframe width=500 height=280 src="https://play.webcamlivestream.com/livemmpi/embed.html" allowfullscreen
             name="Stațiunea Izvoare - Pârtie" scrolling="no" seamless="seamless" frameborder="0"></iframe>
