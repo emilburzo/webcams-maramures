@@ -88,14 +88,12 @@ include 'functions.php';
 
 <?php jwplayer_cam("webcam_izvoare_brazi", "Stațiunea Izvoare - Pârtia Brazi", "https://cloud.freecam.ro:5443/LiveApp/streams/partia-de-schi-izvoare-maramures.m3u8"); ?>
 
-<!--<div title="Borșa - Cota 1400" class="cam">-->
-<!--    <iframe width=500 height=280 src="/b3p4l5g5v534p2z2y2/embed.html" allowfullscreen-->
-<!--            name="Borșa - Cota 1400" scrolling="no" seamless="seamless" frameborder="0"></iframe>-->
-<!--</div>-->
+<div class="cam">
+    <iframe width=500 height=280 src="https://www.youtube.com/embed/EFVAnTrAwXs?autoplay=1&mute=1"  title="Borșa - Telescaun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
-<div title="Borșa - Telescaun" class="cam">
-    <iframe width=500 height=280 src="/b3p4l5g5v534o2w223/embed.html" allowfullscreen
-            name="Borșa - Telescaun" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+<div class="cam">
+    <iframe width=500 height=280 src="https://www.youtube.com/embed/MtRyBPZRR3g?autoplay=1&mute=1"  title="Borșa - Cota 1400" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <div title="Simared - Baraj Firiza" class="cam">
