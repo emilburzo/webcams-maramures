@@ -60,15 +60,9 @@ include 'functions.php';
     <iframe width=500 height=280 src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | tr '{' '\n' | grep videoId | head -n 1 | cut -d '\"' -f 4 | tr -d '\n'")?>?autoplay=1&mute=1"  title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<div title="Domeniul Mogoșa" class="cam">
-    <iframe width=500 height=280 src="/mmdomeniulmogosa/embed.html" allowfullscreen
-            name="Domeniul Mogoșa" scrolling="no" seamless="seamless" frameborder="0"></iframe>
-</div>
+<?php jwplayer_cam("domeniul_mogosa", "Domeniul Mogoșa", "/mmdomeniulmogosa/index.m3u8"); ?>
 
-<div title="Domeniul Mogoșa - Lac" class="cam">
-    <iframe width=500 height=280 src="/mmdomeniulmogosalac/embed.html" allowfullscreen
-            name="Domeniul Mogoșa - Lac" scrolling="no" seamless="seamless" frameborder="0"></iframe>
-</div>
+<?php jwplayer_cam("domeniul_mogosa_lac", "Domeniul Mogoșa - Lac", "/mmdomeniulmogosalac/index.m3u8"); ?>
 
 <?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "https://live.freecam.ro:5443/LiveApp/streams/partia-de-schi-cavnic-roata-1.m3u8"); ?>
 
