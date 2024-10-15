@@ -81,10 +81,6 @@ include 'functions.php';
     <iframe width=500 height=280 src="https://www.youtube.com/embed/EFVAnTrAwXs?autoplay=1&mute=1"  title="Borșa - Telescaun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<div class="cam">
-    <iframe width=500 height=280 src="https://www.youtube.com/embed/MtRyBPZRR3g?autoplay=1&mute=1"  title="Borșa - Cota 1400" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
 <div title="Simared - Baraj Firiza" class="cam">
     <iframe width=500 height=280 src="https://rtsp.me/embed/fYstFyAz/" allowfullscreen
             name="Simared - Baraj Firiza" scrolling="no" seamless="seamless" frameborder="0"></iframe>
