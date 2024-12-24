@@ -64,7 +64,7 @@ include 'functions.php';
 
 <?php jwplayer_cam("domeniul_mogosa_lac", "Domeniul Mogoșa - Lac", "/mmdomeniulmogoslac/index.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
+<?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "/LiveApp/streams/partia-de-schi-cavnic-roata-1.m3u8"); ?>
 
 <?php jwplayer_cam("webcam_cavnic2", "Cavnic - Roata 2", "/LiveApp/streams/partia-de-schi-cavnic-roata-2.m3u8"); ?>
 
