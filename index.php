@@ -60,6 +60,8 @@ include 'functions.php';
     <iframe width=500 height=280 src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | tr '{' '\n' | grep videoId | head -n 1 | cut -d '\"' -f 4 | tr -d '\n'")?>?autoplay=1&mute=1"  title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
+<?php jwplayer_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "https://p.webcamromania.ro/partiaizvoare/index.m3u8"); ?>
+
 <?php jwplayer_cam("domeniul_mogosa", "Domeniul Mogoșa", "/mmdomeniulmogosa/index.m3u8"); ?>
 
 <?php jwplayer_cam("domeniul_mogosa_lac", "Domeniul Mogoșa - Lac", "/mmdomeniulmogoslac/index.m3u8"); ?>
@@ -69,8 +71,6 @@ include 'functions.php';
 <?php jwplayer_cam("webcam_cavnic2", "Cavnic - Roata 2", "/LiveApp/streams/partia-de-schi-cavnic-roata-2.m3u8"); ?>
 
 <?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
-
-<?php jwplayer_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "https://p.webcamromania.ro/partiaizvoare/index.m3u8"); ?>
 
 <div title="Simared - Baraj Firiza" class="cam">
     <iframe width=500 height=280 src="https://rtsp.me/embed/fYstFyAz/" allowfullscreen
