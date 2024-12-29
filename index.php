@@ -70,12 +70,7 @@ include 'functions.php';
 
 <?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
 
-<div title="Stațiunea Izvoare - Pârtie" class="cam">
-    <iframe width=500 height=280 src="https://play.webcamlivestream.com/livemmpi/embed.html" allowfullscreen
-            name="Stațiunea Izvoare - Pârtie" scrolling="no" seamless="seamless" frameborder="0"></iframe>
-</div>
-
-<?php jwplayer_cam("webcam_izvoare_brazi", "Stațiunea Izvoare - Pârtia Brazi", "https://cloud.freecam.ro:5443/LiveApp/streams/partia-de-schi-izvoare-maramures.m3u8"); ?>
+<?php jwplayer_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "https://p.webcamromania.ro/partiaizvoare/index.m3u8"); ?>
 
 <div title="Simared - Baraj Firiza" class="cam">
     <iframe width=500 height=280 src="https://rtsp.me/embed/fYstFyAz/" allowfullscreen
