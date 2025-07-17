@@ -60,7 +60,7 @@ include 'functions.php';
     <iframe width=500 height=280 src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | tr '{' '\n' | grep videoId | head -n 1 | cut -d '\"' -f 4 | tr -d '\n'")?>?autoplay=1&mute=1"  title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<?php jwplayer_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "https://p.webcamromania.ro/partiaizvoare/index.m3u8"); ?>
+<?php jwplayer_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "/LiveApp/streams/partia-de-schi-brazi-izvoare.m3u8"); ?>
 
 <?php jwplayer_cam("domeniul_mogosa", "Domeniul Mogoșa", "/mmdomeniulmogosa/index.m3u8"); ?>
 
