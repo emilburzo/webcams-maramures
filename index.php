@@ -57,7 +57,7 @@ include 'functions.php';
 <?php jwplayer_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://live2.freecam.ro:5443/LiveApp/streams/aeroclubul-romaniei-aeroclubul-baia-mare.m3u8"); ?>
 
 <div class="cam">
-    <iframe width=500 height=280 src="https://www.youtube.com/embed/<?php system("curl -s https://www.youtube.com/channel/UClIsAcbHUMmSG8kMDuJydDw/live | tr '{' '\n' | grep videoId | head -n 1 | cut -d '\"' -f 4 | tr -d '\n'")?>?autoplay=1&mute=1"  title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width=500 height=280 src="https://www.youtube.com/embed/live_stream?channel=UClIsAcbHUMmSG8kMDuJydDw&autoplay=1&mute=1" title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <?php jwplayer_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "/LiveApp/streams/partia-de-schi-brazi-izvoare.m3u8"); ?>
