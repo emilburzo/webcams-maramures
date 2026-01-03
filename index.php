@@ -66,9 +66,7 @@ include 'functions.php';
 
 <?php jwplayer_cam("webcam_izvoare_poiana_soarelui", "Izvoare - Pârtia Poiana Soarelui", "https://w1.webcamromania.ro/partiapoianasoarelui/index.m3u8"); ?>
 
-<?php jwplayer_cam("domeniul_mogosa", "Domeniul Mogoșa", "/mmdomeniulmogosa/index.m3u8"); ?>
-
-<?php jwplayer_cam("domeniul_mogosa_lac", "Domeniul Mogoșa - Lac", "/mmdomeniulmogoslac/index.m3u8"); ?>
+<?php jwplayer_cam("domeniul_mogosa_lac", "Domeniul Mogoșa - Lac", "https://w2.webcamromania.ro/mmdomeniulmogoslac/index.m3u8"); ?>
 
 <?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "/LiveApp/streams/partia-de-schi-cavnic-roata-1.m3u8"); ?>
 
