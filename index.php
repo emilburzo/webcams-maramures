@@ -52,6 +52,8 @@ include 'functions.php';
          onerror="document.getElementById('webcam_suior_4_wrapper').style.display = 'none';"/>
 </div>
 
+<?php jwplayer_cam("suior_2", "Șuior Cota 1000", "https://w3.webcamromania.ro/partiasuior2/index.m3u8"); ?>
+
 <?php jwplayer_cam("webcam_bm", "Baia Mare", "https://digilive.rcs-rds.ro/digilivedge/baia_mare_desktop.stream/index.m3u8"); ?>
 
 <?php jwplayer_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://live2.freecam.ro:5443/LiveApp/streams/aeroclubul-romaniei-aeroclubul-baia-mare.m3u8"); ?>
