@@ -16,7 +16,6 @@ include 'functions.php';
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
 <body>
 
@@ -28,25 +27,25 @@ include 'functions.php';
 <main>
 
 <div id="webcam_suior_1_wrapper" class="cam">
-    <img class="skip" title="Suior"
+    <img alt="Webcam Șuior" title="Șuior"
          src="https://camsuior1.npoint.ro/control/faststream.jpg?stream=full&fps=3&framecount=1000&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_1_wrapper').style.display = 'none';"/>
 </div>
 
 <div id="webcam_suior_2_wrapper" class="cam">
-    <img class="skip" title="Suior"
+    <img alt="Webcam Șuior" title="Șuior"
          src="https://camsuior2.npoint.ro/control/faststream.jpg?stream=full&fps=3&framecount=1000&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_2_wrapper').style.display = 'none';"/>
 </div>
 
 <div id="webcam_suior_3_wrapper" class="cam">
-    <img class="skip" title="Suior"
+    <img alt="Webcam Șuior" title="Șuior"
          src="https://camsuior3.npoint.ro/control/faststream.jpg?stream=full&fps=3&framecount=1000&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_3_wrapper').style.display = 'none';"/>
 </div>
 
 <div id="webcam_suior_4_wrapper" class="cam">
-    <img class="skip" title="Suior"
+    <img alt="Webcam Șuior" title="Șuior"
          src="https://camsuior4.npoint.ro/control/faststream.jpg?stream=full&fps=3&framecount=1000&rand=<?php echo time(); ?>"
          onerror="document.getElementById('webcam_suior_4_wrapper').style.display = 'none';"/>
 </div>
