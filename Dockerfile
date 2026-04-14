@@ -1,6 +1,12 @@
-FROM trafex/php-nginx:2.6.0
+FROM php:8.3-cli-alpine AS build
+WORKDIR /src
+COPY index.php functions.php ./
+RUN php index.php > index.html
 
-COPY *.php /var/www/html/
-COPY *.ico /var/www/html/
-COPY css/ /var/www/html/css/
-COPY js/ /var/www/html/js/
+FROM nginxinc/nginx-unprivileged:1.27-alpine-slim
+COPY --from=build /src/index.html /usr/share/nginx/html/index.html
+COPY css/ /usr/share/nginx/html/css/
+COPY js/ /usr/share/nginx/html/js/
+COPY favicon.ico /usr/share/nginx/html/favicon.ico
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 8080
