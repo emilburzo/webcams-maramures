@@ -73,8 +73,8 @@ include 'functions.php';
 <?php hls_cam("webcam_cavnic3", "Cavnic - Roata 3", "/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
 
 <div title="Simared - Baraj Firiza" class="cam">
-    <iframe width=500 height=280 src="https://rtsp.me/embed/fYstFyAz/" allowfullscreen
-            name="Simared - Baraj Firiza" scrolling="no" seamless="seamless" frameborder="0"></iframe>
+    <iframe width="500" height="280" src="https://rtsp.me/embed/fYstFyAz/"
+            title="Simared - Baraj Firiza" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 
 </main>
