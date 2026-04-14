@@ -9,12 +9,12 @@ Single-page PHP site at `webcam.maramures.io` that embeds live webcam feeds from
 ## Architecture
 
 - `index.php` — the only page. Lists every webcam as a `<div class="cam">`. Each cam either:
-  - calls `jwplayer_cam($id, $title, $m3u8)` from `functions.php` to embed an HLS stream via JW Player, or
-  - inlines an `<img>` / `<iframe>` directly (for MJPEG snapshots or external embed providers like YouTube/rtsp.me).
-- `functions.php` — defines `jwplayer_cam()`. The generated player has an `error` handler that hides its wrapper `<div>` when the stream fails, so dead cams disappear from the page automatically. The inline `<img>` cams achieve the same effect via `onerror`.
-- `js/jwplayer.js` — vendored JW Player. The license key is set inline in `index.php`.
+  - calls `hls_cam($id, $title, $m3u8)` from `functions.php` to embed an HLS stream in a native `<video>` (via hls.js, or Safari's built-in HLS), or
+  - inlines an `<img>` / `<iframe>` directly (for MJPEG streams or external embed providers like YouTube/rtsp.me).
+- `functions.php` — defines `hls_cam()`. The generated player has an `error` handler that hides its wrapper `<div>` when the stream fails, so dead cams disappear from the page automatically. The inline `<img>` cams achieve the same effect via `onerror`.
+- `js/hls.min.js` — vendored hls.js (MIT). Loaded once at the bottom of `index.php`.
 - `css/style.css` — layout for the grid of cam tiles.
-- Some `jwplayer_cam()` calls use root-relative `/LiveApp/streams/...` URLs; those are served by an upstream (not this repo) proxied/co-hosted at the same origin in production.
+- Some `hls_cam()` calls use root-relative `/LiveApp/streams/...` URLs; those are served by an upstream (not this repo) proxied/co-hosted at the same origin in production.
 
 Adding a webcam = one new line in `index.php`. No registry, no config file.
 

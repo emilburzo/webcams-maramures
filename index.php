@@ -49,34 +49,33 @@ include 'functions.php';
          onerror="document.getElementById('webcam_suior_4_wrapper').style.display = 'none';"/>
 </div>
 
-<?php jwplayer_cam("suior_2", "Șuior Cota 1000", "https://w3.webcamromania.ro/partiasuior2/index.m3u8"); ?>
+<?php hls_cam("suior_2", "Șuior Cota 1000", "https://w3.webcamromania.ro/partiasuior2/index.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_bm", "Baia Mare", "https://digilive.rcs-rds.ro/digilivedge/baia_mare_desktop.stream/index.m3u8"); ?>
+<?php hls_cam("webcam_bm", "Baia Mare", "https://digilive.rcs-rds.ro/digilivedge/baia_mare_desktop.stream/index.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://live2.freecam.ro:5443/LiveApp/streams/aeroclubul-romaniei-aeroclubul-baia-mare.m3u8"); ?>
+<?php hls_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://live2.freecam.ro:5443/LiveApp/streams/aeroclubul-romaniei-aeroclubul-baia-mare.m3u8"); ?>
 
 <div class="cam">
     <iframe width=500 height=280 src="https://www.youtube.com/embed/live_stream?channel=UClIsAcbHUMmSG8kMDuJydDw&autoplay=1&mute=1" title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<?php jwplayer_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "/LiveApp/streams/partia-de-schi-brazi-izvoare.m3u8"); ?>
+<?php hls_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "/LiveApp/streams/partia-de-schi-brazi-izvoare.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_izvoare_poiana_soarelui", "Izvoare - Pârtia Poiana Soarelui", "https://w1.webcamromania.ro/partiapoianasoarelui/index.m3u8"); ?>
+<?php hls_cam("webcam_izvoare_poiana_soarelui", "Izvoare - Pârtia Poiana Soarelui", "https://w1.webcamromania.ro/partiapoianasoarelui/index.m3u8"); ?>
 
-<?php jwplayer_cam("domeniul_mogosa_lac", "Domeniul Mogoșa - Lac", "https://w2.webcamromania.ro/mmdomeniulmogoslac/index.m3u8"); ?>
+<?php hls_cam("domeniul_mogosa_lac", "Domeniul Mogoșa - Lac", "https://w2.webcamromania.ro/mmdomeniulmogoslac/index.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic", "Cavnic - Roata 1", "/LiveApp/streams/partia-de-schi-cavnic-roata-1.m3u8"); ?>
+<?php hls_cam("webcam_cavnic", "Cavnic - Roata 1", "/LiveApp/streams/partia-de-schi-cavnic-roata-1.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic2", "Cavnic - Roata 2", "/LiveApp/streams/partia-de-schi-cavnic-roata-2.m3u8"); ?>
+<?php hls_cam("webcam_cavnic2", "Cavnic - Roata 2", "/LiveApp/streams/partia-de-schi-cavnic-roata-2.m3u8"); ?>
 
-<?php jwplayer_cam("webcam_cavnic3", "Cavnic - Roata 3", "/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
+<?php hls_cam("webcam_cavnic3", "Cavnic - Roata 3", "/LiveApp/streams/partia-de-schi-cavnic-roata-3.m3u8"); ?>
 
 <div title="Simared - Baraj Firiza" class="cam">
     <iframe width=500 height=280 src="https://rtsp.me/embed/fYstFyAz/" allowfullscreen
             name="Simared - Baraj Firiza" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
 
-<script type="text/javascript" src="js/jwplayer.js"></script>
-<script>jwplayer.key = "jScWsLuA6KaZwo3HVTDeYjOBtJsY3/SdyB6BkQ==";</script>
+<script src="js/hls.min.js"></script>
 </body>
 </html>
