@@ -9,9 +9,8 @@ include 'functions.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Camere Web din Maramureș</title>
-    <meta name=”description” content='Webcam-uri în direct din zona Maramureș, în special de la munte'>
-    <meta name=”keywords”
-          content='webcam, maramureș, munte, baia mare, romania, munte, cavnic, suior, lacul mogoșa, lacul bodi, ignis, varful ignis, borsa, borșa, pasul prislop'>
+    <meta name="description" content="Webcam-uri în direct din zona Maramureș, în special de la munte">
+    <meta name="keywords" content="webcam, maramureș, baia mare, romania, românia, munte, cavnic, suior, lacul mogoșa, lacul bodi, ignis, varful ignis, borsa, borșa, pasul prislop">
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
