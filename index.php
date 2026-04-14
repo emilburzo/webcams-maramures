@@ -18,8 +18,6 @@ include 'functions.php';
 
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>
 

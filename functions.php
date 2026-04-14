@@ -6,7 +6,7 @@ function jwplayer_cam($id, $title, $m3u8)
     <div id="$id" title="$title"></div>
 
     <script>
-        $(function () {
+        document.addEventListener('DOMContentLoaded', function () {
             var player = jwplayer("$id");
             player.setup({
                 file: "$m3u8",
