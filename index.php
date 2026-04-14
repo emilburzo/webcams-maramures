@@ -25,6 +25,8 @@ include 'functions.php';
         în special de la munte (Șuior, Lacul Mogoșa / Bodi, Cavnic, vârful Igniș, Stațiunea Izvoare, Telescaun și pârtie Borșa)</p>
 </header>
 
+<main>
+
 <div id="webcam_suior_1_wrapper" class="cam">
     <img class="skip" title="Suior"
          src="https://camsuior1.npoint.ro/control/faststream.jpg?stream=full&fps=3&framecount=1000&rand=<?php echo time(); ?>"
@@ -75,6 +77,8 @@ include 'functions.php';
     <iframe width=500 height=280 src="https://rtsp.me/embed/fYstFyAz/" allowfullscreen
             name="Simared - Baraj Firiza" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 </div>
+
+</main>
 
 <script src="js/hls.min.js"></script>
 </body>
