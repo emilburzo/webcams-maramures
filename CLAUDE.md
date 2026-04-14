@@ -20,7 +20,7 @@ Adding a webcam = one new line in `index.php`. No registry, no config file.
 
 ## Deploy
 
-- Pushing to `master` triggers `.github/workflows/docker.yml`, which builds a multi-arch image and pushes `emilburzo/webcams-maramures:{latest,<run_number>,<short_sha>}` to Docker Hub.
+- Pushing to `master` triggers `.github/workflows/docker.yml`, which builds a multi-arch image and pushes `ghcr.io/emilburzo/webcams-maramures:{latest,<run_number>,<short_sha>}` to GitHub Container Registry (authenticated via `GITHUB_TOKEN`).
 - `.ci/deploy.sh` substitutes the current `SHORT_SHA` into `.ci/deploy.yaml` and `kubectl apply`s the Deployment/Service/Ingress for host `webcam.maramures.io`. Run this manually after the image build completes.
 - The container image (`trafex/php-nginx`) serves on port 8080.
 
