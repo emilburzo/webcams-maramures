@@ -36,3 +36,7 @@ There is no test suite or linter. `Vagrantfile` is a symlink to a personal templ
 Two ways to preview:
 - **Quick edit loop**: `php -S localhost:8080` — edits to `.php` reflect on reload, but the `/LiveApp/` proxy is absent, so Cavnic/Izvoare HLS cams won't load.
 - **Full fidelity**: `docker build -t webcams . && docker run --rm -p 8080:8080 webcams` — matches production, includes the reverse-proxy.
+
+## Gotchas
+
+- **HLS.js must be tried before `canPlayType('application/vnd.apple.mpegurl')`.** Chromium 147+ shipped experimental built-in HLS support, so that `canPlayType` check is no longer a "Safari-only" signal — it now returns `"maybe"` in Chrome too. If the native branch runs first, Chromium's demuxer fails on these freecam.ro streams (`DEMUXER_ERROR_COULD_NOT_PARSE`) and silently retries the playlist ~30×/s without ever firing a `<video>` `error` event, so the wrapper never hides. Order in `functions.php` is `Hls.isSupported()` → `canPlayType` → `hide()`. Do not flip it back.
