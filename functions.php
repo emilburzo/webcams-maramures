@@ -20,11 +20,7 @@ function hls_cam($id, $title, $m3u8)
             };
             var play = function () { var p = video.play(); if (p) p.catch(function () {}); };
             var init = function (url) {
-                if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    video.src = url;
-                    video.addEventListener('loadedmetadata', play);
-                    video.addEventListener('error', hide);
-                } else if (window.Hls && Hls.isSupported()) {
+                if (window.Hls && Hls.isSupported()) {
                     var hls = new Hls();
                     hls.loadSource(url);
                     hls.attachMedia(video);
@@ -32,6 +28,10 @@ function hls_cam($id, $title, $m3u8)
                     hls.on(Hls.Events.ERROR, function (event, data) {
                         if (data.fatal) hide();
                     });
+                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    video.src = url;
+                    video.addEventListener('loadedmetadata', play);
+                    video.addEventListener('error', hide);
                 } else {
                     hide();
                 }
