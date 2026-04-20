@@ -62,7 +62,7 @@ include 'functions.php';
 
 <?php hls_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "/LiveApp/streams/partia-de-schi-brazi-izvoare.m3u8"); ?>
 
-<?php hls_cam("webcam_izvoare_poiana_soarelui", "Izvoare - Pârtia Poiana Soarelui", "https://w1.webcamromania.ro/partiapoianasoarelui/index.m3u8"); ?>
+<?php hls_cam("webcam_izvoare_cora", "Izvoare - Pârtia Cora", "https://w1.webcamromania.ro/partiacora/index.m3u8"); ?>
 
 <?php hls_cam("domeniul_mogosa_lac", "Domeniul Mogoșa - Lac", "https://w2.webcamromania.ro/mmdomeniulmogoslac/index.m3u8"); ?>
 
