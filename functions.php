@@ -5,7 +5,6 @@ function hls_cam($id, $title, $m3u8)
     $title_attr = htmlspecialchars($title, ENT_QUOTES);
     $id_js = json_encode($id);
     $src_js = json_encode($m3u8);
-    $needs_signing = str_starts_with($m3u8, '/LiveApp/') ? 'true' : 'false';
     echo <<<EOF
 <div id="{$id_attr}_wrapper" class="cam">
     <video id="$id_attr" title="$title_attr" width="500" height="280" controls muted autoplay playsinline></video>
@@ -14,32 +13,24 @@ function hls_cam($id, $title, $m3u8)
             var id = $id_js;
             var video = document.getElementById(id);
             var src = $src_js;
-            var needsSign = $needs_signing;
             var hide = function () {
                 document.getElementById(id + '_wrapper').style.display = 'none';
             };
             var play = function () { var p = video.play(); if (p) p.catch(function () {}); };
-            var init = function (url) {
-                if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    video.src = url;
-                    video.addEventListener('loadedmetadata', play);
-                    video.addEventListener('error', hide);
-                } else if (window.Hls && Hls.isSupported()) {
-                    var hls = new Hls();
-                    hls.loadSource(url);
-                    hls.attachMedia(video);
-                    hls.on(Hls.Events.MANIFEST_PARSED, play);
-                    hls.on(Hls.Events.ERROR, function (event, data) {
-                        if (data.fatal) hide();
-                    });
-                } else {
-                    hide();
-                }
-            };
-            if (needsSign && window._freecamSign) {
-                window._freecamSign(src).then(init).catch(hide);
+            if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = src;
+                video.addEventListener('loadedmetadata', play);
+                video.addEventListener('error', hide);
+            } else if (window.Hls && Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(src);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, play);
+                hls.on(Hls.Events.ERROR, function (event, data) {
+                    if (data.fatal) hide();
+                });
             } else {
-                init(src);
+                hide();
             }
         });
     </script>

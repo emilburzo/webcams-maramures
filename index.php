@@ -26,42 +26,6 @@ include 'functions.php';
 
 <main>
 
-<script>
-(function () {
-    var ready = fetch('/freecam-init', { method: 'HEAD', credentials: 'same-origin' })
-        .then(function () { return true; })
-        .catch(function () { return false; });
-
-    function getCookie(name) {
-        var m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
-        return m ? m[2] : null;
-    }
-
-    window._freecamSign = function (path) {
-        return ready.then(function (ok) {
-            if (!ok) throw new Error('session failed');
-            var xsrf = getCookie('XSRF-TOKEN');
-            if (!xsrf) throw new Error('no XSRF token');
-            return fetch('/freecam-sign', {
-                method: 'POST',
-                credentials: 'same-origin',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-XSRF-TOKEN': decodeURIComponent(xsrf)
-                },
-                body: JSON.stringify({ url: 'https://live.freecam.ro:5443' + path })
-            });
-        }).then(function (r) {
-            if (!r.ok) throw new Error('sign ' + r.status);
-            return r.json();
-        }).then(function (data) {
-            if (!data || !data.signed) throw new Error('no signed url');
-            return data.signed.replace('https://live.freecam.ro:5443', '');
-        });
-    };
-})();
-</script>
-
 <div id="webcam_suior_1_wrapper" class="cam">
     <img alt="Webcam Șuior" title="Șuior"
          src="https://camsuior1.npoint.ro/control/faststream.jpg?stream=full&fps=3&framecount=1000&rand=<?php echo time(); ?>"
