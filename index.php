@@ -93,7 +93,7 @@ include 'functions.php';
 <?php hls_cam("webcam_aeroclub_bm", "Tăuții-Măgherăuș - Aeroclubul Baia Mare", "https://live2.freecam.ro:5443/LiveApp/streams/aeroclubul-romaniei-aeroclubul-baia-mare.m3u8"); ?>
 
 <div class="cam">
-    <iframe width=500 height=280 src="https://www.youtube.com/embed/live_stream?channel=UClIsAcbHUMmSG8kMDuJydDw&autoplay=1&mute=1" title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width=500 height=280 src="https://ignis.maramures.io/player" title="Webcam Vârful Igniș - LIVE" frameborder="0" allow="accelerometer https://www.youtube.com; autoplay https://www.youtube.com; clipboard-write https://www.youtube.com; encrypted-media https://www.youtube.com; gyroscope https://www.youtube.com; picture-in-picture https://www.youtube.com; web-share https://www.youtube.com" allowfullscreen></iframe>
 </div>
 
 <?php hls_cam("webcam_izvoare", "Stațiunea Izvoare - Pârtie", "/LiveApp/streams/partia-de-schi-brazi-izvoare.m3u8"); ?>
