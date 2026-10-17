@@ -12,8 +12,11 @@ include 'functions.php';
     <meta name="description" content="Webcam-uri în direct din zona Maramureș, în special de la munte">
     <meta name="keywords" content="webcam, maramureș, baia mare, romania, românia, munte, cavnic, suior, lacul mogoșa, lacul bodi, ignis, varful ignis, borsa, borșa, pasul prislop">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#333333">
 
     <link href="css/style.css" rel="stylesheet">
 </head>

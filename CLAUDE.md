@@ -22,7 +22,26 @@ Adding a webcam = one new line in `index.php`. No registry, no config file.
 
 Multi-stage `Dockerfile`:
 1. `php:8.3-cli-alpine` renders `index.php` → `index.html` (one `php index.php > index.html` invocation).
-2. `nginxinc/nginx-unprivileged:1.27-alpine-slim` receives the rendered HTML, CSS, JS, favicon, and `nginx.conf`. Final image is ~20 MB, runs as non-root, listens on 8080.
+2. `nginxinc/nginx-unprivileged:1.27-alpine-slim` receives the rendered HTML, CSS, JS, icons, and `nginx.conf`. Final image is ~20 MB, runs as non-root, listens on 8080.
+
+## Icons
+
+`icon.svg` is the source; everything else is generated from it, each favicon size rendered on its own so the small ones stay crisp:
+
+```sh
+sed 's/ rx="13"//' icon.svg > /tmp/square.svg   # Apple crops its own corners
+rsvg-convert -w 180 -h 180 /tmp/square.svg -o apple-touch-icon.png
+rsvg-convert -w 192 -h 192 icon.svg -o icon-192.png
+rsvg-convert -w 512 -h 512 icon.svg -o icon-512.png
+# maskable: square, everything after the tile shrunk into the 80% safe zone
+sed -e 's/ rx="13"//' -e '/<rect width="64" height="64"/a <g transform="translate(32 32) scale(.8) translate(-32 -32)">' \
+    -e 's|</svg>|</g></svg>|' icon.svg > /tmp/maskable.svg
+rsvg-convert -w 512 -h 512 /tmp/maskable.svg -o icon-maskable-512.png
+for s in 16 32 48; do rsvg-convert -w $s -h $s icon.svg -o /tmp/i$s.png; done
+python -c "from PIL import Image; i = [Image.open(f'/tmp/i{s}.png') for s in (16, 32, 48)]; i[2].save('favicon.ico', sizes=[(16,16),(32,32),(48,48)], append_images=i[:2])"
+```
+
+`site.webmanifest` makes "Add to home screen" open the page full-screen, like an app. New files need a line in the `Dockerfile`'s `COPY`.
 
 ## Deploy
 
