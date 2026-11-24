@@ -25,12 +25,27 @@ function hls_cam($id, $title, $m3u8)
                     hls.loadSource(url);
                     hls.attachMedia(video);
                     hls.on(Hls.Events.MANIFEST_PARSED, play);
+                    // an offline cam can get a canned clip instead of an error: a VOD playlist
+                    hls.on(Hls.Events.LEVEL_LOADED, function (event, data) {
+                        if (!data.details.live) {
+                            hide();
+                            hls.destroy();
+                        }
+                    });
                     hls.on(Hls.Events.ERROR, function (event, data) {
                         if (data.fatal) hide();
                     });
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                     video.src = url;
-                    video.addEventListener('loadedmetadata', play);
+                    video.addEventListener('loadedmetadata', function () {
+                        if (isFinite(video.duration)) {
+                            hide();
+                            video.removeAttribute('src');
+                            video.load();
+                        } else {
+                            play();
+                        }
+                    });
                     video.addEventListener('error', hide);
                 } else {
                     hide();
