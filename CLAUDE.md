@@ -12,7 +12,7 @@ Single-page site at `webcam.maramures.io` that embeds live webcam feeds from the
   - calls `hls_cam($id, $title, $m3u8)` from `functions.php` to embed an HLS stream in a native `<video>` (via hls.js, or Safari's built-in HLS), or
   - inlines an `<img>` / `<iframe>` directly (for MJPEG streams or external embed providers like YouTube/rtsp.me).
 - `functions.php` — defines `hls_cam()`. The generated player has an `error` handler that hides its wrapper `<div>` when the stream fails, so dead cams disappear from the page automatically. It also hides it when the stream turns out to be VOD (hls.js: `details.live` false; native HLS: a finite `duration`): an offline freecam.ro cam answers with a canned 30 s "available on freecam.ro" clip instead of an error, and every cam here is live. The inline `<img>` cams achieve the same effect via `onerror`.
-- `nginx.conf` — runtime server config. Serves static assets and reverse-proxies `/LiveApp/` to `live.freecam.ro:5443` with spoofed `Host`/`Referer`/`Origin` headers and rewritten CORS. Copied into `/etc/nginx/conf.d/default.conf` in the final image.
+- `nginx.conf` — runtime server config. Serves static assets and reverse-proxies `/LiveApp/` to `live.freecam.ro:5443` with spoofed `Host`/`Referer`/`Origin` headers and rewritten CORS. `/freecam-init` (freecam's `/sanctum/csrf-cookie`: session and `XSRF-TOKEN` cookies) and `/freecam-sign` (`/api/sign-hls`) let the page sign those `/LiveApp/` URLs. Copied into `/etc/nginx/conf.d/default.conf` in the final image.
 - `js/hls.min.js` — vendored hls.js (MIT). Loaded once at the bottom of the page.
 - `css/style.css` — layout for the grid of cam tiles.
 
